@@ -24,7 +24,7 @@ const styles: StyleSheet.Styles = StyleSheet.create({
   content: {
     borderRadius: 4,
     padding: 8,
-    backgroundColor: '#fff',
+    backgroundColor: 'skyblue', // SIMEON: This is just for testing
   },
   arrow: {
     position: 'absolute',
