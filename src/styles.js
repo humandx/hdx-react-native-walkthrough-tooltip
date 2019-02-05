@@ -6,6 +6,8 @@ const styles: StyleSheet.Styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     opacity: 0,
     backgroundColor: 'transparent',
+    paddingLeft: 16,
+    paddingRight: 16,
   },
   containerVisible: {
     opacity: 1,
