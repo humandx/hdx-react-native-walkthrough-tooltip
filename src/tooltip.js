@@ -27,7 +27,7 @@ const SCREEN_HEIGHT: number = Dimensions.get('window').height;
 const SCREEN_WIDTH: number = Dimensions.get('window').width;
 
 const DEFAULT_ARROW_SIZE: SizeType = new Size(16, 8);
-const DEFAULT_DISPLAY_AREA: RectType = new Rect(24, 24, SCREEN_WIDTH - 48, SCREEN_HEIGHT - 48);
+const DEFAULT_DISPLAY_AREA: RectType = new Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
 type PlacementType = 'auto' | 'top' | 'bottom' | 'left' | 'right';
 
