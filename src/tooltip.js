@@ -221,31 +221,32 @@ class Tooltip extends Component<Props, State> {
   getTooltipPlacementStyles = () => {
     const { height } = this.props.arrowSize;
     const { tooltipOrigin } = this.state;
-
+    const tutorialSpacing = 24; // Distance between the arrow and the target component
+ 
     switch (this.state.placement) {
       case 'bottom':
         return {
           paddingTop: height,
-          top: tooltipOrigin.y - height,
+          top: tooltipOrigin.y - height + tutorialSpacing,
           left: tooltipOrigin.x,
         };
       case 'top':
         return {
           paddingBottom: height,
-          top: tooltipOrigin.y,
+          top: tooltipOrigin.y - tutorialSpacing,
           left: tooltipOrigin.x,
         };
       case 'right':
         return {
           paddingLeft: height,
           top: tooltipOrigin.y,
-          left: tooltipOrigin.x - height,
+          left: tooltipOrigin.x - height + tutorialSpacing,
         };
       case 'left':
         return {
           paddingRight: height,
           top: tooltipOrigin.y,
-          left: tooltipOrigin.x,
+          left: tooltipOrigin.x - tutorialSpacing,
         };
       default:
         return {};
