@@ -22,9 +22,9 @@ const styles: StyleSheet.Styles = StyleSheet.create({
     shadowOpacity: 0.8,
   },
   content: {
-    borderRadius: 4,
-    padding: 8,
-    backgroundColor: 'skyblue', // SIMEON: This is just for testing
+    borderRadius: 10,
+    padding: 24,
+    backgroundColor: '#fff',
   },
   arrow: {
     position: 'absolute',
