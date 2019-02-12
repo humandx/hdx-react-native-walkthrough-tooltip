@@ -42,7 +42,7 @@ type Props = {
   contentStyle: StyleSheet.Styles,
   displayArea: RectType,
   isVisible: boolean,
-  isNotTutorial: boolean,
+  tooltipHoverDistance: number;
   onChildLongPress: () => void,
   onChildPress: () => void,
   onClose: () => void,
@@ -220,10 +220,10 @@ class Tooltip extends Component<Props, State> {
   };
 
   getTooltipPlacementStyles = () => {
-    const { isNotTutorial } = this.props;
+    const { tooltipHoverDistance } = this.props;
     const { height } = this.props.arrowSize;
     const { tooltipOrigin } = this.state;
-    const tutorialSpacing = !isNotTutorial ? 24 : 0; // Distance between the arrow and the target component
+    const tutorialSpacing = tooltipHoverDistance ? tooltipHoverDistance : 24; // Distance between the arrow and the target component
  
     switch (this.state.placement) {
       case 'bottom':
